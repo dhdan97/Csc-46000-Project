@@ -1,8 +1,8 @@
 # Project Title
 
 ### Group Members
-- 
-- 
+- Daniel Hernandez
+- Justin Park
 
 ### Repository Structure
 List each file and what it's purpose it. Make sure you indicate where your data cleaning code and data dictionary are! 
