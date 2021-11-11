@@ -1,2 +1,3 @@
 # Csc-46000-Project
-Project for Csc 4600 Data Science class
+CSC 46000 Introduction to Computer Science Project
+Group: Daniel Hernandez, Justin Park
