@@ -1,16 +1,13 @@
-# Project Title
+# Natural Language Processing with Disaster Tweets
 
 ### Group Members
 - Daniel Hernandez
 - Justin Park
 
 ### Repository Structure
-List each file and what it's purpose it. Make sure you indicate where your data cleaning code and data dictionary are! 
-
-For example:
 - `data`
-  - `raw_twitter.csv`: Raw data from the Twitter API
-  - `raw_census.csv`: Raw data from the Census API
+  - `train.csv`: Raw data from the Kaggle website used for training our model
+  - `test.csv`: Raw data from the Kaggle website used for testing our model
   - `cleaned.csv`: The cleaned and combined dataset for modeling. 
   - `data_dictionary.csv`: The data dictionary for cleaned. 
 - `code`
