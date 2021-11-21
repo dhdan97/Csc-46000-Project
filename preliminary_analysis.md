@@ -12,8 +12,6 @@
   - `premlimary_analysis.ipynb`: Includes descriptive statistics and cleans data 
 
 <strong>Preliminary Analysis</strong> <br>
-
- Your preliminary analysis should include: <br>
 <ul>
   <li><strong>Data Cleaning Code </strong> <br>
         Code for cleaning and processing your data. Include a data dictionary for your transformed dataset. 
@@ -98,7 +96,3 @@
     </ul> 
   </li>
 </ul>
- Your preliminary analysis does not have to be a formal writeup. You will submit your Github repository for your project.
-
-
-
