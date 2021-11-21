@@ -1,18 +1,4 @@
-# Natural Language Processing with Disaster Tweets
-
-### Group Members
-- Daniel Hernandez
-- Justin Park
-
-### Repository Structure
-- `data`
-  - `train.csv`: Raw data from the Kaggle website used for training our model
-  - `test.csv`: Raw data from the Kaggle website used for testing our model
-- `code`
-  - `premlimary_analysis.ipynb`: Includes descriptive statistics and cleans data 
-
 <strong>Preliminary Analysis</strong> <br>
-<ul>
   <li><strong>Data Cleaning Code </strong> <br>
         Code for cleaning and processing your data. Include a data dictionary for your transformed dataset. 
     <ul> 
@@ -70,22 +56,22 @@
       <li>
       Daniel Hernandez
       <ul> 
-        <li>Found the data sets. 
+        <li>Researched and acquired the datasets
         </li>
-        <li>Helped in brain storming. 
+        <li>Helped in brainstorming. 
         </li> 
-        <li>Created colab template
+        <li>Created and organized juypter notebook
         </li>
-        <li>Implemented visualizations
+        <li>Implemented visualizations of data for preliminary analysis
         </li>
-        <li>Assisted in thinking of procedure to clean data columns.
+        <li>Assisted in thinking of procedure to clean data columns
         </li>
     </ul> 
       </li> 
       <li>
       Justin Park
       <ul> 
-        <li>Helped in brain storming.
+        <li>Helped in brainstorming.
         </li>
         <li>Implemented functions to clean keyword and location columns.
         </li> 
@@ -96,3 +82,4 @@
     </ul> 
   </li>
 </ul>
+
