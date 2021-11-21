@@ -1,3 +1,16 @@
+# Natural Language Processing with Disaster Tweets
+
+### Group Members
+- Daniel Hernandez
+- Justin Park
+
+### Repository Structure
+- `data`
+  - `train.csv`: Raw data from the Kaggle website used for training our model
+  - `test.csv`: Raw data from the Kaggle website used for testing our model
+- `code`
+  - `premlimary_analysis.ipynb`: Includes descriptive statistics and cleans data 
+
 <strong>Preliminary Analysis</strong> <br>
   <li><strong>Data Cleaning Code </strong> <br>
         Code for cleaning and processing your data. Include a data dictionary for your transformed dataset. 
@@ -82,4 +95,3 @@
     </ul> 
   </li>
 </ul>
-
