@@ -63,7 +63,11 @@ We can see that there are words that appear more in disaster Tweets and not in n
 
 It seems like there are keywords that both categories share, like 'fire' and 'disaster', but there are still keywords that are in disaster Tweets that are not in normal Tweets, showing that keywords may prove useful in identifying disaster Tweets.
 
+## Model Training and Evaluation
 
-## Evaluation
+In order to parse our cleaned text in a way our model can understand it, we have to run our text through a word vectorizer to translate Tweets into a matrix of numbers. We will be using TF-IDF as our vectorizer, which measures the originality of a word by comparing the number of times a word appears in a document with the number of documents the word appears in.
 
 ## Future Work
+
+- Trying a different vectorizer
+- Trying to add keyword and locaiton features 
