@@ -31,7 +31,37 @@ Our dataset consists of approximately 7600 tweets that have already been classif
 There are only 3 columns that will be of use to use, but there are missing values, and the 'text' columns needs some preprocessing (normalization, tokenization, removing stop words, etc.) before we get started with our models.
 
 ## Data Preprocessing and Prelimiary Analysis
+Here's how our data looked before any preprocessing:
+![Screenshot_2](https://user-images.githubusercontent.com/22521067/144729307-65d3670e-ed8b-4f2b-b22f-dd4fbf96417e.png)
 
+In order to fill in missing values from the 'keyword' column, we obtained a set of unique values in that column, then scanned each entry's respective 'text' value to identify any words that appear in the set of keywords.
+
+In order to fill in missing values from the 'location' column, we used the [Geograpy3 library](https://github.com/somnathrakshit/geograpy3) to extract place names from text.
+
+Cleaning the 'text' column involved removing any html or links in the tweet(they do not provide any context to our problem by themselves), removing punctuation, and putting every character in lowercase.
+
+With clean data, let's visualize how Tweets that are about disasters look compared to normal Tweets.
+
+### Word Cloud
+
+#### Normal Tweets
+![normalTweets](https://user-images.githubusercontent.com/22521067/144729565-9a4388c0-3871-4096-8dfd-b744ba72723a.png)
+
+#### Disaster Tweets
+![disasterTweets](https://user-images.githubusercontent.com/22521067/144729582-e4cf3d44-ec41-49d5-b4a1-61e159e9fd3e.png)
+
+We can see that there are words that appear more in disaster Tweets and not in normal Tweets. Words like 'fire', 'death' and 'flood'. This makes sense; you would expect Tweets about disasters to use names of disasters in their Tweets.
+
+### Keyword Frequency
+
+#### Normal Tweets
+![keywordNormal](https://user-images.githubusercontent.com/22521067/144729765-e0f08113-c8ef-48f0-b51b-78577f313cdc.png)
+
+
+#### Disaster Tweets
+![keywordDisaster](https://user-images.githubusercontent.com/22521067/144729768-d3222698-a4f9-43b0-b06c-d16e21b34934.png)
+
+It seems like there are keywords that both categories share, like 'fire' and 'disaster', but there are still keywords that are in disaster Tweets that are not in normal Tweets, showing that keywords may prove useful in identifying disaster Tweets.
 
 
 ## Evaluation
