@@ -66,6 +66,8 @@ It seems like there are keywords that both categories share, like 'fire' and 'di
 ## Model Training and Evaluation
 
 In order to parse our cleaned text in a way our model can understand it, we have to run our text through a word vectorizer to translate Tweets into a matrix of numbers. We will be using TF-IDF as our vectorizer, which measures the originality of a word by comparing the number of times a word appears in a document with the number of documents the word appears in.
+![tfIdf](https://user-images.githubusercontent.com/22521067/144763443-0a0d5f45-97f1-4d4e-8108-b8351e80f02d.png)
+
 
 ## Future Work
 
