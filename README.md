@@ -15,7 +15,7 @@ But, it’s not always clear whether a person’s words are actually announcing 
 <img align="left" width="200" alt="tweet_screenshot" src="https://user-images.githubusercontent.com/22521067/144728661-3e781d06-69b0-4f0f-b466-256c6ee8a152.png">
 The author explicitly uses the word “ABLAZE” but means it metaphorically. This is clear to a human right away, especially with the visual aid. But it’s less clear to a machine.
 
-So, with that in mind, we state the question our model will be answering; **Can we predict whether or not a Tweet is talking about a real disaster?**
+So, with that in mind, we state the question our model will be answering; **Can we predict whether or not a Tweet is talking about a real disaster?**. This is a classsification problem.
 
 Building an algorithm that can analyze whether a Tweet is talking about a real disaster can make it possible for first response organizations and agencies to send first response units to that area faster than traditional disaster detection methods. This also allows these agencies to collaborate with phone companies to send alerts to users in the area that a disaster was detected. 
 
@@ -28,7 +28,7 @@ Our dataset consists of approximately 7600 tweets that have already been classif
   - **location**: The location the tweet was sent from (may be blank)
   - **target**: This denotes whether a tweet is about a real disaster (1) or not (0)
 
-There are only 3 columns that will be of use to use, but there are missing values, and the 'text' columns needs some preprocessing (normalization, tokenization, removing stop words, etc.) before we get started with our models.
+There are only 3 columns that will be of use to use, but there are missing values, and the 'text' columns needs some preprocessing (normalization, tokenization, removing stop words, etc.) before we get started with our models. Given the nature of our input data(our Tweets) this will prove to be a NLP problem.
 
 ## Data Preprocessing and Prelimiary Analysis
 Here's how our data looked before any preprocessing:
