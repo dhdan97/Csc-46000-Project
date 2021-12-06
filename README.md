@@ -93,7 +93,7 @@ We can check which value of alpha(a hyperparameter) gives us a better score:
 
 ![Screenshot_8](https://user-images.githubusercontent.com/22521067/144786542-2726b0df-a915-4b81-a066-e4fa80389298.png)
 
-It seems like Naive Bayes has a similar level of accuracy with our logisitic regression model. But with an accuracy of 74%, we believe this model has promise and should prove effective for further development and use.
+It seems like Naive Bayes has a similar level of accuracy with our logisitic regression model. But with an accuracy of 74%, we believe this model has promise and should prove effective for further development and use. Logistic Regression being a common baseline model, it's good to see decent results and we are confident that exploring intricate models and methods of vectorization will produce better results in the future.
 
 ## Future Work
 
