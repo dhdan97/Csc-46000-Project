@@ -68,8 +68,30 @@ It seems like there are keywords that both categories share, like 'fire' and 'di
 In order to parse our cleaned text in a way our model can understand it, we have to run our text through a word vectorizer to translate Tweets into a matrix of numbers. We will be using TF-IDF as our vectorizer, which measures the originality of a word by comparing the number of times a word appears in a document with the number of documents the word appears in.
 ![tfIdf](https://user-images.githubusercontent.com/22521067/144763443-0a0d5f45-97f1-4d4e-8108-b8351e80f02d.png)
 
+Before working with our models; let us take note of the balance of data:
+![Screenshot_3](https://user-images.githubusercontent.com/22521067/144773442-06c09a57-f4d6-4054-97b3-2acbb2d08c16.png)
+It seems like we have a pretty balanced set of data between postive and negative cases. This is good, since imbalance data can lead to our models doing a worse job at predicting the cateogory with less data for it.
+
+Now we are ready to feed our data into our models. We first start with Logistic Regression:
+![Screenshot_3](https://user-images.githubusercontent.com/22521067/144773996-42cfcdd6-f147-4845-a4e2-31074d8fa29d.png)
+
+We can visualize our models performance with a ROC curve:
+
+74% Accuracy and a ROC AUC score of 0.8; Pretty decent! Let's see if we can improve our scores with some hyperparameter tuning using GridSearchCV.
+We supply GridSearchCV with a set of parameters and their values to iterate through, and GridSearchCV will exhuastively search through each combination of parameters and find the set of parameters that returns the best score:
+
+It seems like hyperparameter tuning has not made a significant improvement to our model; at least with the set of parameters we gave.
+
+Let's try using a different model; Naive Bayes:
+
+We can check which value of alpha(a hyperparameter) gives us a better score:
+
+It seems like Naive Bayes has a similar level of accuracy with our logisitic regression model. But with an accuracy of 74%, we believe this model has promise and should prove effective for further development and use.
 
 ## Future Work
 
-- Trying a different vectorizer
-- Trying to add keyword and locaiton features 
+- **Trying a different vectorizer:** Different vectorizers that provide different interpretations of words from numbers might change our model's performance. Gensim library is a vectorizer that using topic model rather than word frequency.
+
+- **Trying to add keyword and locaiton features into our model:** While these columns were useful in our preliminary analysis, we we're not able to able to successful add these features into our models due to the interest of time. A probable plan involves one-hot encoding these columns into binary features, and appending these features into the matrix that is produced from the word vectorization of our Tweet.
+
+- **Adjust our true positive rate/false positive rate based on our model's goal:** Based on the specific use case for our model, we would want to prioritize either our true positive rate or our true negative rate. Suppose we would send out a full first response team to the area based on whether if a Tweet was talking about a disaster. In this case we would want to focus on true positive rates; and we would make the necessary adjustments to ensure we correctly detect disaster Tweets, as opposed to ensuring we detect normal Tweets. 
