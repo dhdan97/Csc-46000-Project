@@ -77,14 +77,21 @@ Now we are ready to feed our data into our models. We first start with Logistic 
 
 We can visualize our models performance with a ROC curve:
 
+![Screenshot_5](https://user-images.githubusercontent.com/22521067/144786410-122c99be-71d5-425a-857a-8b3199e7abcf.png)
+
 74% Accuracy and a ROC AUC score of 0.8; Pretty decent! Let's see if we can improve our scores with some hyperparameter tuning using GridSearchCV.
 We supply GridSearchCV with a set of parameters and their values to iterate through, and GridSearchCV will exhuastively search through each combination of parameters and find the set of parameters that returns the best score:
+![Screenshot_6](https://user-images.githubusercontent.com/22521067/144786483-23d92a31-b6f5-4b61-9fbd-c490d75643b7.png)
 
 It seems like hyperparameter tuning has not made a significant improvement to our model; at least with the set of parameters we gave.
 
 Let's try using a different model; Naive Bayes:
 
+![Screenshot_7](https://user-images.githubusercontent.com/22521067/144786505-bf9133ee-2fb0-4fed-ab28-acb6e129638d.png)
+
 We can check which value of alpha(a hyperparameter) gives us a better score:
+
+![Screenshot_8](https://user-images.githubusercontent.com/22521067/144786542-2726b0df-a915-4b81-a066-e4fa80389298.png)
 
 It seems like Naive Bayes has a similar level of accuracy with our logisitic regression model. But with an accuracy of 74%, we believe this model has promise and should prove effective for further development and use.
 
